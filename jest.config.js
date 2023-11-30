@@ -1,5 +1,10 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
-module.exports = {
+const config = {
     preset: 'ts-jest',
+    coverageDirectory: 'coverage',
+    roots: ['<rootDir>/src'],
     testEnvironment: 'node',
+    testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
 }
+
+module.exports = config
