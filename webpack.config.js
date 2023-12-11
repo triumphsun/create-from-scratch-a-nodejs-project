@@ -10,6 +10,7 @@ const config = {
     module: {
         rules: [{ test: /\.ts/, use: 'ts-loader', exclude: /node-modules/ }],
     },
+    devServer: { static: './assets', port: 4500 },
 };
 
 module.exports = config;
